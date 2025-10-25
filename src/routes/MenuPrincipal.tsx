@@ -49,7 +49,7 @@ const Main = () => {
     { img: MConsulta, texto: "Marcar Consulta", path: "" },
     { img: VConsulta, texto: "Ver Consultas", path: "/VerConsultas" },
     { img: Localiz, texto: "Unidades", path: "/Localizacao" },
-    { img: Sobre, texto: "Sobre", path: "/sobre" },
+    { img: Sobre, texto: "Portal do Paciente", path: "/PortalPaciente" },
     { img: Chatbot, texto: "Assistente Virtual", onClick: toggleChat },
     { img: Suporte, texto: "Suporte ao Site", path: "/SuporteSite" },
     { img: Equipe, texto: "Equipe", path: "/integrantes" },

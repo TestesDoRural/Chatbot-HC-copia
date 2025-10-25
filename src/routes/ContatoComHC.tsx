@@ -14,7 +14,7 @@ interface FormErrors {
   message?: string;
 }
 
-const Contato: React.FC = () => {
+const ContatoComHC: React.FC = () => {
   const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
@@ -146,4 +146,4 @@ const Contato: React.FC = () => {
   );
 };
 
-export default Contato;
+export default ContatoComHC;

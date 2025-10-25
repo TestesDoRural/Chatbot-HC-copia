@@ -1,6 +1,6 @@
-import Email from "../assets/Icones/email.jpeg"
-import Instagram from "../assets/Icones/icone-instagram.jpeg"
-import Linkedin from "../assets/Icones/icone-linkedin.jpeg"
+import SuporteSiteLogo from "../assets/icones-menu/icone-suporte.jpeg"
+import Sobre from "../assets/icones-menu/icone-sobre.jpeg"
+import ContatoHC from "../assets/icones-menu/icone-contato.jpeg"
 
 const Footer = () => {
   return (
@@ -15,25 +15,25 @@ const Footer = () => {
 
         <div className="flex flex-row items-center justify-center gap-6">
           <a
-            href="#"
-            title="Instagram"
-            className="text-[#44aaff] hover:underline text-sm md:text-base transition-transform duration-300 hover:scale-110 inline w-8 h-8"
+            href="/sobre"
+            title="Sobre Nós"
+            className="hover:underline text-sm md:text-base transition-transform duration-300 hover:scale-150 inline w-8 h-8"
           >
-            <img src= {Instagram} alt="Instagram"/>
+            <img src= {Sobre} alt="Sobre nós"/>
           </a>
           <a
-            href="#"
-            title="LinkedIn"
-            className="text-[#44aaff] hover:underline text-sm md:text-base transition-transform duration-300 hover:scale-110 inline w-8 h-8"
+            href="/contato"
+            title="ContatoHC"
+            className="hover:underline text-sm md:text-base transition-transform duration-300 hover:scale-150 inline w-8 h-8"
           >
-            <img src= {Linkedin} alt="Linkedin"/>
+            <img src= {ContatoHC} alt="ContatoHC"/>
           </a>
           <a
-            href="mailto:contato@projetoviagem.com"
-            title="E-mail"
-            className="text-[#44aaff] hover:underline text-sm md:text-base transition-transform duration-300 hover:scale-110 inline w-8 h-8"
+            href="/SuporteSite"
+            title="Suporte do Site"
+            className="hover:underline text-sm md:text-base transition-transform duration-300 hover:scale-150 inline w-8 h-8"
           >
-            <img src= {Email} alt="email"/>
+            <img src= {SuporteSiteLogo} alt="SuporteSite"/>
           </a>
         </div>
       </div>

@@ -8,7 +8,6 @@ const Integrantes = () => {
   return (
     <div className="flex flex-col items-center p-4 sm:p-8 mt-10 bg-gradient-to-b from-blue-50 to-white">
       
-      {/* Card do Giovane */}
       <div className="flex flex-col sm:flex-row items-center w-full max-w-2xl p-6 mb-8 bg-white rounded-xl shadow-lg border border-blue-600 transition-transform duration-300 ease-in-out hover:translate-y-[-5px]">
         <img
           src= {Giovane}
@@ -41,7 +40,6 @@ const Integrantes = () => {
         </div>
       </div>
 
-      {/* Card do Lucas */}
       <div className="flex flex-col sm:flex-row items-center w-full max-w-2xl p-6 mb-8 bg-white rounded-xl shadow-lg border border-blue-600 transition-transform duration-300 ease-in-out hover:translate-y-[-5px]">
         <img
           src= {Lucas}
@@ -72,7 +70,6 @@ const Integrantes = () => {
         </div>
       </div>
 
-      {/* Card do Matheus */}
       <div className="flex flex-col sm:flex-row items-center w-full max-w-2xl p-6 bg-white rounded-xl shadow-lg border border-blue-600 transition-transform duration-300 ease-in-out hover:translate-y-[-5px]">
         <img
           src= {Matheus}

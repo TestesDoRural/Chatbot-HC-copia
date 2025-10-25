@@ -97,7 +97,7 @@ const Localizacao = () => {
               {unidadesVisiveis.map((unidade) => (
                 <Link 
                   key={unidade.id}
-                  to={`/unidades/${unidade.id}`}
+                  to={`/Unidades/${unidade.id}`}
                   className="bg-white rounded-lg shadow-md overflow-hidden group transition-transform duration-300 hover:-translate-y-2 block relative z-0"
                   onClick={(e) => {
                     const distance = Math.abs(startX - currentX);
