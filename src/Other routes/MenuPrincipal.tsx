@@ -46,15 +46,15 @@ const Main = () => {
   };
 
   const opcoes = [
-    { img: MConsulta, texto: "Marcar Consulta", path: "" },
+    { img: MConsulta, texto: "Marcar Consulta", path: "/MarcarConsulta" },
     { img: VConsulta, texto: "Ver Consultas", path: "/VerConsultas" },
-    { img: Localiz, texto: "Unidades", path: "/Localizacao" },
-    { img: Sobre, texto: "Portal do Paciente", path: "/PortalPaciente" },
+    { img: Localiz, texto: "Portal do Paciente", path: "/PortalPaciente" },
+    { img: Sobre, texto: "Modo Libras", path: "/PortalPaciente" },
     { img: Chatbot, texto: "Assistente Virtual", onClick: toggleChat },
     { img: Suporte, texto: "Suporte ao Site", path: "/SuporteSite" },
     { img: Equipe, texto: "Equipe", path: "/integrantes" },
     { img: Faq, texto: "Perguntas Frequentes", path: "/faq" },
-    { img: Contato, texto: "Contato com HC", path: "/contato" },
+    { img: Contato, texto: "Contato com HC", path: "/ContatoComHC" },
   ];
 
   return (

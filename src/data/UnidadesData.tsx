@@ -1,4 +1,3 @@
-// Copiamos todas as suas importações de imagem para cá
 import Central from "/src/assets/Foto_locais/Inst-Central.jpg"
 import Psiquiatria from "/src/assets/Foto_locais/Inst-Psquiatria.jpg"
 import MedicinaFR from "/src/assets/Foto_locais/Inst-MedicinaFR.jpg"
@@ -17,7 +16,8 @@ import Cancer from "/src/assets/Foto_locais/Inst-Cancer.jpg"
 import Ensino from "/src/assets/Foto_locais/Ensino-Pesquisa-Inovacao.jpg"
 
 export interface Unidade {
-  id: string; 
+  identificador: number;
+  id : string; 
   nome: string;
   img: string; 
   linkMaps: string;
@@ -27,6 +27,7 @@ export interface Unidade {
 
 export const unidades: Unidade[] = [
   { 
+    identificador: 1,
     id: 'instituto-central', 
     nome: 'Instituto Central', 
     img: Central, 
@@ -35,6 +36,7 @@ export const unidades: Unidade[] = [
     localizacao: 'Av. Dr. Enéas Carvalho de Aguiar, 255 - Cerqueira César, São Paulo - SP, 05403-000'
   },
   { 
+    identificador: 2,
     id: 'instituto-psiquiatria',
     nome: 'Instituto de Psiquiatria', 
     img: Psiquiatria, 
@@ -43,6 +45,7 @@ export const unidades: Unidade[] = [
     localizacao: 'R. Dr. Ovídio Pires de Campos, 785 - Cerqueira César, São Paulo - SP, 05403-010'
   },
   {
+    identificador: 3,
     id: 'instituto-medicina-fisica',
     nome: 'Instituto de Medicina Física e Reabilitação',
     img: MedicinaFR,
@@ -51,6 +54,7 @@ export const unidades: Unidade[] = [
     localizacao: 'Rua Domingo de Soto, 100 - Vila Mariana, São Paulo - SP, 04116-030'
   },
   { 
+    identificador: 4,
     id: 'instituto-coracao',
     nome: 'Instituto do Coração (InCor)', 
     img: Coracao, 
@@ -59,6 +63,7 @@ export const unidades: Unidade[] = [
     localizacao: 'Av. Dr. Enéas Carvalho de Aguiar, 44 - Cerqueira César, São Paulo - SP, 05403-900'
   },
   { 
+    identificador: 5,
     id: 'predio-ambulatorios', 
     nome: 'Prédio dos Ambulatórios', 
     img: Ambulatorio, 
@@ -67,6 +72,7 @@ export const unidades: Unidade[] = [
     localizacao: 'Av. Dr. Enéas Carvalho de Aguiar, 155 - 8o. andar - bloco laranja - Cerqueira César, São Paulo - SP, 05403-000'
   },
   { 
+    identificador: 6,
     id: 'instituto-ortopedia', 
     nome: 'Instituto de Ortopedia e Traumatologia', 
     img: Ortopedia, 
@@ -75,6 +81,7 @@ export const unidades: Unidade[] = [
     localizacao: 'R. Dr. Ovídio Pires de Campos, 333 - Cerqueira César, São Paulo - SP, 05403-010'
   },
   { 
+    identificador: 7,
     id: 'instituto-crianca', 
     nome: 'Instituto da Criança e do Adolescente', 
     img: Crianca, 
@@ -83,6 +90,7 @@ export const unidades: Unidade[] = [
     localizacao: 'Av. Dr. Enéas Carvalho de Aguiar, 647 - Cerqueira César, São Paulo - SP, 05403-000'
   },
   { 
+    identificador: 8,
     id: 'instituto-radiologia', 
     nome: 'Instituto de Radiologia (InRad)', 
     img: Radiologia, 
@@ -91,6 +99,7 @@ export const unidades: Unidade[] = [
     localizacao: '03178-200 - Cerqueira César (localizado em: Hospital das Clínicas FMUSP)'
   },
   { 
+    identificador: 9,
     id: 'laboratorios-investigacao', 
     nome: 'Laboratórios de Investigação Médica', 
     img: Investigacao, 
@@ -98,7 +107,8 @@ export const unidades: Unidade[] = [
     descricao: 'Os LIMs são um conjunto de 66 laboratórios que desenvolvem pesquisas de ponta nas mais diversas áreas da medicina, contribuindo para o avanço científico.' ,
     localizacao: ''
   },
-  { 
+  {  
+    identificador: 10,
     id: 'centro-convencoes-reboucas', 
     nome: 'Centro de Convenções Rebouças', 
     img: Reboucas, 
@@ -107,6 +117,7 @@ export const unidades: Unidade[] = [
     localizacao: ''
   },
   { 
+    identificador: 11,
     id: 'inova-hc', 
     nome: 'Inova HC', 
     img: Inova, 
@@ -115,6 +126,7 @@ export const unidades: Unidade[] = [
     localizacao: 'R. Dr. Ovídio Pires de Campos - Cerqueira César, São Paulo - SP, 05401-000'
   },
   { 
+    identificador: 12,
     id: 'predio-administracao', 
     nome: 'Prédio da Administração', 
     img: Administracao, 
@@ -123,6 +135,7 @@ export const unidades: Unidade[] = [
     localizacao: 'R. Dr. Ovídio Pires de Campos, 225 - Cerqueira César, São Paulo - SP, 05402-000'
   },
   { 
+    identificador: 13,
     id: 'hcx-fmusp', 
     nome: 'HCX FMUSP', 
     img: HCX, 
@@ -131,6 +144,7 @@ export const unidades: Unidade[] = [
     localizacao: 'R. Dr. Ovídio Pires de Campos, 471 - Cerqueira César, São Paulo - SP, 05402-000'
   },
   { 
+    identificador: 14,
     id: 'instituto-perdizes', 
     nome: 'Instituto Perdizes', 
     img: Perdizes, 
@@ -139,6 +153,7 @@ export const unidades: Unidade[] = [
     localizacao: 'R. Cotoxó, 1142 - Pompeia, São Paulo - SP, 05021-001'
   },
   { 
+    identificador: 15,
     id: 'instituto-cancer', 
     nome: 'Instituto do Câncer (ICESP)', 
     img: Cancer, 
@@ -147,6 +162,7 @@ export const unidades: Unidade[] = [
     localizacao: 'Av. Dr. Arnaldo, 251 - Cerqueira César, São Paulo - SP, 01246-000'
   },
   { 
+    identificador: 16,
     id: 'laboratorio-ensino', 
     nome: 'Laboratório de Ensino, Pesquisa e Inovação', 
     img: Ensino, 

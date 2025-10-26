@@ -1,16 +1,18 @@
 import Header from "./components/header";
-import Integrantes from "./routes/integrantes";
+import Integrantes from "./routes/Integrantes";
 import ContatoComHC from "./routes/ContatoComHC";
 import MenuPrincipal from "./routes/MenuPrincipal";
-import Faq from "./routes/faq";
+import Faq from "./MainMenuRoutes/faq";
 import Footer from "./components/Footer";
 import Sobre from "./routes/sobre";
-import PortalPaciente from "./routes/PortalPaciente";
+import PortalPaciente from "./MainMenuRoutes/PortalPaciente";
 import MainHome from "./components/MainHome";
-import VerConsultas from "./routes/VerConsultas";
+import VerConsultas from "./MainMenuRoutes/VerConsultas";
+import MarcarConsulta from "./MainMenuRoutes/MarcarConsulta";
 import Localizacao from "./routes/Localizacao";
 import UnidadeDetalhe from "./routes/unidadeDetalhes";
-import SuporteSite from "./routes/SuporteSite";
+import SuporteSite from "./MainMenuRoutes/SuporteSite";
+import AtivarAcessiblidade from "./MainMenuRoutes/AtivarAcessiblidade";
 import { Routes, Route } from "react-router-dom";
 import ScrollTopPage from "./components/ScrollTopPage"; 
 
@@ -30,9 +32,11 @@ function App() {
             <Route path="/Sobre" element={<Sobre />} />
             <Route path="/PortalPaciente" element={<PortalPaciente />} />
             <Route path="/VerConsultas" element={<VerConsultas />} />
+            <Route path="/MarcarConsulta" element={<MarcarConsulta />} />
             <Route path="/Localizacao" element={<Localizacao />} />
-            <Route path="/unidades/:unidadeId" element={<UnidadeDetalhe />} />
+            <Route path="/Unidades/:unidadeId" element={<UnidadeDetalhe />} />
             <Route path="/SuporteSite" element={<SuporteSite />} />
+            <Route path="/AtivarAcessiblidade" element={<AtivarAcessiblidade />} />
           </Routes>
         </main>
         <Footer />
