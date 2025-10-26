@@ -1,6 +1,6 @@
 // Main.tsx
 import { useState } from "react";
-import Card from "../components/MenuCard";
+import Card from "./MenuCard";
 
 
 const Main = () => {

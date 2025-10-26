@@ -9,6 +9,7 @@ import Suporte from "../assets/icones-menu/icone-suporte.jpeg";
 import Equipe from "../assets/icones-menu/icone-equipe.jpeg";
 import Faq from "../assets/icones-menu/icone-faq.png";
 import Contato from "../assets/icones-menu/icone-contato.jpeg";
+import { toggleVLibras } from "../components/VLibras";
 
 declare global {
   interface Window {
@@ -49,7 +50,7 @@ const Main = () => {
     { img: MConsulta, texto: "Marcar Consulta", path: "/MarcarConsulta" },
     { img: VConsulta, texto: "Ver Consultas", path: "/VerConsultas" },
     { img: Localiz, texto: "Portal do Paciente", path: "/PortalPaciente" },
-    { img: Sobre, texto: "Modo Libras", path: "/PortalPaciente" },
+    { img: Sobre, texto: "Modo Libras", onClick: toggleVLibras },
     { img: Chatbot, texto: "Assistente Virtual", onClick: toggleChat },
     { img: Suporte, texto: "Suporte ao Site", path: "/SuporteSite" },
     { img: Equipe, texto: "Equipe", path: "/integrantes" },
