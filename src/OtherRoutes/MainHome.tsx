@@ -56,6 +56,7 @@ const MainHome: React.FC = () => {
     return () => {
       // ao desmontar, restaura
       document.body.classList.remove('hide-layout');
+      document.body.style.overflow = 'auto';
     };
   }, []);
 
