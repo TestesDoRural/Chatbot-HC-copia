@@ -1,27 +1,28 @@
 import Header from "./components/header";
-import Integrantes from "./Other routes/Integrantes";
-import ContatoComHC from "./Other routes/ContatoComHC";
-import MenuPrincipal from "./Other routes/MenuPrincipal";
+import Integrantes from "./OtherRoutes/Integrantes";
+import ContatoComHC from "./OtherRoutes/ContatoComHC";
+import MenuPrincipal from "./OtherRoutes/MenuPrincipal";
 import Faq from "./MainMenuRoutes/faq";
 import Footer from "./components/Footer";
-import Sobre from "./Other routes/sobre";
+import Sobre from "./OtherRoutes/sobre";
 import PortalPaciente from "./MainMenuRoutes/PortalPaciente";
-import MainHome from "./components/MainHome";
+import MainHome from "./OtherRoutes/MainHome";
 import VerConsultas from "./MainMenuRoutes/VerConsultas";
 import MarcarConsulta from "./MainMenuRoutes/MarcarConsulta";
-import Localizacao from "./Other routes/Localizacao";
-import UnidadeDetalhe from "./Other routes/unidadeDetalhes";
+import Localizacao from "./OtherRoutes/Localizacao";
+import UnidadeDetalhe from "./OtherRoutes/unidadeDetalhes";
 import SuporteSite from "./MainMenuRoutes/SuporteSite";
 import AtivarAcessiblidade from "./MainMenuRoutes/AtivarAcessiblidade";
 import { Routes, Route } from "react-router-dom";
 import ScrollTopPage from "./components/ScrollTopPage"; 
 import VLibras from "./components/VLibras";
+import Informacoes from "./MainMenuRoutes/Informacoes";
 
 
 function App() {
   return (
     <>
-      <div className="flex flex-col min-h-screen bg-gradient-to-b from-blue-50 to-white">
+      <div className="flex flex-col min-h-screen bg-gradient-to-b from-blue-50 to-white dark:bg-gray-800">
         <Header />
         <ScrollTopPage />
         <VLibras />
@@ -40,6 +41,7 @@ function App() {
             <Route path="/Unidades/:unidadeId" element={<UnidadeDetalhe />} />
             <Route path="/SuporteSite" element={<SuporteSite />} />
             <Route path="/AtivarAcessiblidade" element={<AtivarAcessiblidade />} />
+            <Route path="/Informacoes" element={<Informacoes />} />
           </Routes>
         </main>
         <Footer />

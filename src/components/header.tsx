@@ -10,7 +10,7 @@ const Header = () => {
     { name: "Home", path: "/MenuPrincipal" },
     { name: "Integrantes", path: "/Integrantes" },
     { name: "FAQ", path: "/FAQ" },
-    { name: "Contato", path: "/ContatoComHC" },
+    { name: "Unidades", path: "/Localizacao" },
   ];
 
   return (

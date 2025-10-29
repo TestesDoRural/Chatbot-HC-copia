@@ -1,6 +1,5 @@
 import SuporteSiteLogo from "../assets/icones-menu/icone-suporte.jpeg"
-import Sobre from "../assets/icones-menu/icone-sobre.jpeg"
-import ContatoHC from "../assets/icones-menu/icone-contato.jpeg"
+import Sobre from "../assets/icones-menu/icone-sobre.png"
 
 const Footer = () => {
   return (
@@ -13,25 +12,18 @@ const Footer = () => {
           Desenvolvido por Giovane Amato, Lucas Vieira e Matheus Roque.
         </p>
 
-        <div className="flex flex-row items-center justify-center gap-6">
+        <div className="flex flex-row items-center justify-center gap-6 bg-blue-400 w-30 rounded-full mx-auto p-2">
           <a
             href="/sobre"
             title="Sobre Nós"
-            className="hover:underline text-sm md:text-base transition-transform duration-300 hover:scale-150 inline w-8 h-8"
+            className="hover:underline text-sm md:text-base transition-transform duration-300 hover:scale-130 inline w-10 h-10"
           >
             <img src= {Sobre} alt="Sobre nós"/>
           </a>
           <a
-            href="/contato"
-            title="ContatoHC"
-            className="hover:underline text-sm md:text-base transition-transform duration-300 hover:scale-150 inline w-8 h-8"
-          >
-            <img src= {ContatoHC} alt="ContatoHC"/>
-          </a>
-          <a
             href="/SuporteSite"
             title="Suporte do Site"
-            className="hover:underline text-sm md:text-base transition-transform duration-300 hover:scale-150 inline w-8 h-8"
+            className="hover:underline text-sm md:text-base transition-transform duration-300 hover:scale-130 inline w-10 h-10"
           >
             <img src= {SuporteSiteLogo} alt="SuporteSite"/>
           </a>
