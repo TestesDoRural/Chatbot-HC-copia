@@ -14,7 +14,7 @@ const Footer = () => {
 
         <div className="flex flex-row items-center justify-center gap-6 bg-blue-400 w-30 rounded-full mx-auto p-2">
           <a
-            href="/sobre"
+            href="/SobreNos"
             title="Sobre Nós"
             className="hover:underline text-sm md:text-base transition-transform duration-300 hover:scale-130 inline w-10 h-10"
           >
