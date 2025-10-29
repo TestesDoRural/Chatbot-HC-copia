@@ -62,11 +62,7 @@ const MainHome: React.FC = () => {
 
 
   return (
-    <div className="flex flex-col items-center justify-center text-center p-8 bg-white rounded-lg shadow-xl 
-    w-auto mt-30
-    sm:w-2/3 sm:mr-auto sm:ml-auto md:mt-40 sm:mt-30
-    
-     border-2 border-blue-200">
+    <div className="flex flex-col items-center justify-center text-center p-8 bg-white rounded-lg shadow-xl w-auto mt-30 mb-30 sm:w-2/3 sm:mr-auto sm:ml-auto md:mt-40 sm:mt-30 border-2 border-blue-200">
 
       <h1 className="text-4xl font-bold text-gray-800">
         Seja Bem Vindo
