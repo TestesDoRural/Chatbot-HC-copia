@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 interface FormData {
@@ -50,8 +50,22 @@ const MainHome: React.FC = () => {
   // botão habilitado apenas quando email e senha válidos
   const isValid = emailRegex.test(formData.email) && formData.senha.trim().length >= 10;
 
+    useEffect(() => {
+    // ao montar, esconde header/footer
+    document.body.classList.add('hide-layout');
+    return () => {
+      // ao desmontar, restaura
+      document.body.classList.remove('hide-layout');
+    };
+  }, []);
+
+
   return (
-    <div className="flex flex-col items-center justify-center text-center p-10 bg-white rounded-lg shadow-xl mt-10 ml-auto mr-auto w-2/3 mb-10 sm:mt-10 md:mt-15 lg:mt-15 xl:mt-15 border-2 border-blue-200">
+    <div className="flex flex-col items-center justify-center text-center p-8 bg-white rounded-lg shadow-xl 
+    w-auto mt-30
+    sm:w-2/3 sm:mr-auto sm:ml-auto md:mt-40 sm:mt-30
+    
+     border-2 border-blue-200">
 
       <h1 className="text-4xl font-bold text-gray-800">
         Seja Bem Vindo
