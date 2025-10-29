@@ -3,7 +3,7 @@ import { useState } from "react";
 import MConsulta from "../assets/icones-menu/icone-marcar-consulta.jpeg";
 import VConsulta from "../assets/icones-menu/icone-consulta.jpeg";
 import Chatbot from "../assets/icones-menu/icone-chatbot.jpeg";
-import Suporte from "../assets/icones-menu/icone-suporte.jpeg";
+import Contato from "../assets/icones-menu/icone-contato.jpeg"
 import Equipe from "../assets/icones-menu/icone-equipe.jpeg";
 import Faq from "../assets/icones-menu/icone-faq.png";
 import Libras from "../assets/icones-menu/icone-linguagem-de-sinais.png";
@@ -52,7 +52,7 @@ const Main = () => {
     { img: PortalPaciente, texto: "Portal do Paciente", path: "/PortalPaciente" },
     { img: Libras, texto: "Modo Libras", onClick: toggleVLibras },
     { img: Chatbot, texto: "Assistente Virtual", onClick: toggleChat },
-    { img: Suporte, texto: "Contato com HC", path: "/ContatoComHC" },
+    { img: Contato, texto: "Contato com HC", path: "/ContatoComHC" },
     { img: Info, texto: "Informações Importantes", path: "/Informacoes" },
     { img: Equipe, texto: "Equipe", path: "/integrantes" },
     { img: Faq, texto: "Perguntas Frequentes", path: "/faq" },
