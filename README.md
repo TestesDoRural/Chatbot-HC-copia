@@ -11,11 +11,11 @@ Nosso objetivo é **reduzir a taxa de absenteísmo para menos de 10%.** Para iss
 
 ## Tecnologia utilizada:
 <div style="display: inline">
-  <img src="readme-images/React.png" height="50" width="50" />
-  <img src="readme-images/typescript.png" height="50" width="50" />
-  <img src="readme-images/tailwind-css.png" height="50" width="50" />
-  <img src="readme-images/Vite.js.png" height="50" width="50" />
-  <img src="readme-images/Git-Icon.png" height="50" width="50" />
+  <img src="/readme-images/React.png" height="50" width="50" />
+  <img src="/readme-images/typescript.png" height="50" width="50" />
+  <img src="/readme-images/tailwind-css.png" height="50" width="50" />
+  <img src="/readme-images/Vite.js.png" height="50" width="50" />
+  <img src="/readme-images/Git-Icon.png" height="50" width="50" />
 </div>          
 
 ## Integrantes:
