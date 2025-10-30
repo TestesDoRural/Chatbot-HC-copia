@@ -4,7 +4,7 @@ import ContatoComHC from "./OtherRoutes/ContatoComHC";
 import MenuPrincipal from "./OtherRoutes/MenuPrincipal";
 import Faq from "./MainMenuRoutes/faq";
 import Footer from "./components/Footer";
-import Sobre from "./OtherRoutes/sobre";
+import Sobre from "./OtherRoutes/SobreNos";
 import PortalPaciente from "./MainMenuRoutes/PortalPaciente";
 import MainHome from "./OtherRoutes/MainHome";
 import VerConsultas from "./MainMenuRoutes/VerConsultas";
@@ -33,7 +33,7 @@ function App() {
             <Route path="/integrantes" element={<Integrantes />} />
             <Route path="/faq" element={<Faq />} />
             <Route path="/ContatoComHC" element={<ContatoComHC />} />
-            <Route path="/Sobre" element={<Sobre />} />
+            <Route path="/SobreNos" element={<Sobre />} />
             <Route path="/PortalPaciente" element={<PortalPaciente />} />
             <Route path="/VerConsultas" element={<VerConsultas />} />
             <Route path="/MarcarConsulta" element={<MarcarConsulta />} />
