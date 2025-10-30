@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import SuporteSiteLogo from "../assets/icones-menu/icone-suporte.jpeg"
 import Sobre from "../assets/icones-menu/icone-sobre.png"
 
@@ -13,20 +14,20 @@ const Footer = () => {
         </p>
 
         <div className="flex flex-row items-center justify-center gap-6 bg-blue-400 w-30 rounded-full mx-auto p-2">
-          <a
-            href="/SobreNos"
+          <Link
+            to="/SobreNos"
             title="Sobre Nós"
             className="hover:underline text-sm md:text-base transition-transform duration-300 hover:scale-130 inline w-10 h-10"
           >
-            <img src= {Sobre} alt="Sobre nós"/>
-          </a>
-          <a
-            href="/SuporteSite"
+            <img src={Sobre} alt="Sobre nós"/>
+          </Link>
+          <Link
+            to="/SuporteSite"
             title="Suporte do Site"
             className="hover:underline text-sm md:text-base transition-transform duration-300 hover:scale-130 inline w-10 h-10"
           >
-            <img src= {SuporteSiteLogo} alt="SuporteSite"/>
-          </a>
+            <img src={SuporteSiteLogo} alt="SuporteSite"/>
+          </Link>
         </div>
       </div>
     </footer>
