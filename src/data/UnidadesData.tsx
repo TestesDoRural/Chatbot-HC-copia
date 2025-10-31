@@ -114,7 +114,7 @@ export const unidades: Unidade[] = [
     img: Reboucas, 
     linkMaps: 'https://maps.app.goo.gl/SnmtBMusmdDGKMH27', 
     descricao: 'Anexo ao complexo HC, o Centro de Convenções Rebouças sedia grandes eventos, congressos e simpósios, principalmente na área da saúde.' ,
-    localizacao: ''
+    localizacao: 'Av. Rebouças, 600 - Pinheiros, São Paulo - SP, 05402-000'
   },
   { 
     identificador: 11,
