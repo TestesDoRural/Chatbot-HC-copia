@@ -8,54 +8,39 @@ const Informacoes = () => {
             <h1 className="text-blue-800 text-3xl text-center sm:mb-3">Informações Importantes</h1>
             <p className="text-center mt-2">Aqui você encontrará informações relevantes sobre nossos serviços.</p>
         </div>
-        <article className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] md:grid-cols-3 sm:w-2/3">
-            <div className="m-5 p-5 border-1 border-blue-300 bg-white rounded-2xl shadow-2xl flex flex-col items-center justify-center">
-                <h2 className="text-blue-800 text-2xl mb-2 ">Horário de Atendimento</h2>
-                <p>Segunda a Sexta: 8h às 18h</p>
+        <article className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] md:grid-cols-3 sm:w-2/3 mt-10">
+            
+            <div className="m-5 p-5 border-1 border-blue-300 bg-white rounded-2xl shadow-2xl flex flex-col items-center justify-center hover:transform hover:scale-105 transition-transform duration-300">
+                <h2 className="text-blue-800 text-2xl mb-2">Para sua Consulta</h2>
+                <p className="text-center">Tenha em mãos seus documentos (RG, CPF, Cartão SUS) e o pedido médico. São essenciais para um atendimento ágil.</p>
+                <p className="text-xl mt-5">Para mais informações</p>
+                <div className="w-3/3 h-10 mt-4 bg-blue-600 flex justify-center items-center rounded-full shadow-2xl hover:transform hover:scale-105 transition-transform duration-300 cursor-pointer">
+                    <Link to="https://www.hc.fm.usp.br/hc/paciente/informacoes-uteis" target="_blank" className="text-white text-center ">Ver Mais Informações</Link>
+                </div>
             </div>
-            <div className="m-5 p-5 border-1 border-blue-300 bg-white rounded-2xl shadow-2xl flex flex-col items-center justify-center">
+            
+            <div className="m-5 p-5 border-1 border-blue-300 bg-white rounded-2xl shadow-2xl flex flex-col items-center justify-center hover:transform hover:scale-105 transition-transform duration-300">
                 <h2 className="text-blue-800 text-2xl mb-2">Localização</h2>
-                <p className="text-center">ℹ️ Informações Gerais e de Segurança</p>
-                <ul className="text-left list-disc ml-5 space-y-2">
-                    <li>Itens que se aplicam a todos que circulam pelo hospital.</li>
-                    <li>Protocolos de Saúde Atuais:</li>
-                    <li>Qualquer regra vigente sobre uso de máscaras, higienização das mãos ou restrições de entrada para pessoas com sintomas gripais.</li>
-                </ul>
-                <ul className="text-left list-disc ml-5 space-y-2">
-                    <li>
-                        <strong>Localização e Como Chegar:</strong>
-                    </li>
-                        <li>
-                            <strong>Mapas do Complexo:</strong>
-                            <ul className="list-decimal ml-5">
-                                <li>Mapa/guia indicando onde fica cada especialidade/instituto.</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <strong>Telefones Úteis:</strong>
-                            <ul className="list-decimal ml-5">
-                                <li>Central de Atendimento/Informações.</li>
-                                <li>Ouvidoria (elogios, sugestões ou reclamações).</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <strong>Segurança:</strong>
-                            <ul className="list-decimal ml-5">
-                                <li>Regras básicas (ex.: "Não fume nas dependências do hospital", "Cuide dos seus pertences").</li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                <p className="text-xl mt-5">Para ver as unidades</p>
-                <div className="w-2/3 h-10 mt-4 bg-blue-600 flex justify-center items-center rounded-full shadow-2xl hover:transform hover:scale-105 transition-transform duration-300 cursor-pointer"><Link to="/Localizacao" className="text-white">Clique Aqui</Link></div>
+                <p className="text-center">O HC é um complexo com diversos institutos. Encontre o endereço, veja como chegar e localize a unidade que você precisa
+                </p>
+                    <p className="text-xl mt-5">Localização e Unidades</p>
+                    <div className="w-3/3 h-10 mt-4 bg-blue-600 flex justify-center items-center rounded-full shadow-2xl hover:transform hover:scale-105 transition-transform duration-300 cursor-pointer">
+                        <Link to="/Localizacao" className="text-white text-center ">Ver Mapa e Institutos</Link>
+                    </div>
+                     
             </div>
-            <div className="m-5 p-5 border-1 border-blue-300 bg-white rounded-2xl shadow-2xl flex flex-col items-center justify-center ">
-                <h2 className="text-blue-800 text-2xl mb-2">Horário de Atendimento</h2>
-                <p>Segunda a Sexta: 8h às 18h</p>
-            </div>
-            <div className="m-5 p-5 border-1 border-blue-300 bg-white rounded-2xl shadow-2xl flex flex-col items-center justify-center">
-                <h2 className="text-blue-800 text-2xl mb-2">Horário de Atendimento</h2>
-                <p>Segunda a Sexta: 8h às 18h</p>
+            <div className="m-5 p-5 border-1 border-blue-300 bg-white rounded-2xl shadow-2xl flex flex-col items-center justify-center hover:transform hover:scale-105 transition-transform duration-300">
+                <h2 className="text-blue-800 text-2xl mb-2">Canais de Atendimento</h2>
+                <p className="text-center">Não encontrou o que procura? Veja a lista de telefones úteis, central de agendamento e o contato da Ouvidoria</p>
+                <p className="text-xl mt-5">Ver contatos</p>
+                <div className="flex flex-row gap-5 w-3/3">
+                    <div className="w-50 h-10 mt-4 bg-blue-600 flex justify-center items-center rounded-full shadow-2xl hover:transform hover:scale-105 transition-transform duration-300 cursor-pointer">
+                        <Link to="/ContatoComHC" className="text-white text-center ">Contatar HC</Link>
+                    </div>
+                     <div className="w-50 h-10 mt-4 bg-blue-600 flex justify-center items-center rounded-full shadow-2xl hover:transform hover:scale-105 transition-transform duration-300 cursor-pointer">
+                        <Link to="/SuporteSite" className="text-white text-center">Suporte do Site</Link>   
+                    </div>
+                </div>
             </div>
         </article>
     </main>

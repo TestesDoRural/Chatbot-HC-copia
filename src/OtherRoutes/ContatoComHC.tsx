@@ -61,7 +61,7 @@ const ContatoComHC: React.FC = () => {
 
       setTimeout(() => {
         setShowNotification(false);
-        navigate('/main'); 
+        navigate('/MenuPrincipal'); 
       }, 3000);
     } else {
       console.log('Formulário com erros de validação.');

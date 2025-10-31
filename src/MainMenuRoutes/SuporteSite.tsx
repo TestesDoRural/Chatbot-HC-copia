@@ -21,7 +21,7 @@ const SuporteSite: React.FC = () => {
 
     setTimeout(() => {
       setShowNotification(false);
-      navigate('/main'); 
+      navigate('/MenuPrincipal'); 
     }, 3000);
   };
 

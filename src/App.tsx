@@ -22,11 +22,11 @@ import Informacoes from "./MainMenuRoutes/Informacoes";
 function App() {
   return (
     <>
-      <div className="flex flex-col min-h-screen bg-gradient-to-b from-blue-50 to-white dark:bg-gray-800">
+      <div className="flex flex-col min-h-screen">
         <Header />
         <ScrollTopPage />
         <VLibras />
-        <main className="flex-grow">
+        <main className="flex-grow bg-gradient-to-b from-blue-50 to-white">
           <Routes>
             <Route path="/" element={<MainHome />} />
             <Route path="/MenuPrincipal" element={<MenuPrincipal />} />
