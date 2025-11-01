@@ -31,7 +31,7 @@ const Informacoes = () => {
             </div>
             <div className="m-5 p-5 border-1 border-blue-300 bg-white rounded-2xl shadow-2xl flex flex-col items-center justify-center hover:transform hover:scale-105 transition-transform duration-300">
                 <h2 className="text-blue-800 text-2xl mb-2">Canais de Atendimento</h2>
-                <p className="text-center">Não encontrou o que procura? Veja a lista de telefones úteis, central de agendamento e o contato da Ouvidoria</p>
+                <p className="text-center">Não encontrou o que procura ou precisa de ajuda, confira nossos canais de atendimento.</p>
                 <p className="text-xl mt-5">Ver contatos</p>
                 <div className="flex flex-row gap-5 w-3/3">
                     <div className="w-50 h-10 mt-4 bg-blue-600 flex justify-center items-center rounded-full shadow-2xl hover:transform hover:scale-105 transition-transform duration-300 cursor-pointer">
