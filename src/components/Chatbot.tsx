@@ -24,7 +24,7 @@ const Main = () => {
             onClick={op.onClick}
             className="cursor-pointer"
           >
-            <Card img={op.img} texto={op.texto} path={op.path} />
+            <Card img={op.img} texto={op.texto} path={op.path} ariaLabel={""} />
           </div>
         ))}
       </div>
