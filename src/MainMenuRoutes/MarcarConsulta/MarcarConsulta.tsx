@@ -1,32 +1,35 @@
 import React, { useState } from 'react';
-import type { Consulta } from '../App';
-import BotaoVoltar from "../components/BotaoVoltar"
+import type { Consulta } from './type'; 
+import BotaoVoltar from "../../components/BotaoVoltar"
 
 interface MarcarConsultaProps {
   onMarcarConsulta: (novaConsulta: Omit<Consulta, 'id'>) => void;
 }
 
 const MarcarConsulta = ({ onMarcarConsulta }: MarcarConsultaProps) => {
-  const [doutor, setDoutor] = useState('');
+  const [paciente, setPaciente] = useState('');
+  const [data, setData] = useState(''); 
   const [horario, setHorario] = useState('');
   const [especialidade, setEspecialidade] = useState('');
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault(); // Impede o recarregamento da página
+    e.preventDefault(); 
 
-    if (!doutor || !horario || !especialidade) {
+    if (!paciente || !data || !horario || !especialidade) { 
       alert('Por favor, preencha todos os campos.');
       return;
     }
 
     onMarcarConsulta({
-      doutor,
+      paciente,
+      data, 
       horario,
-      especialidade,
-      observacao: 'Chegar com 15 minutos de antecedência.'
-    });
+      especialidade, 
+      observacao: 'Chegar com 15 minutos de antecedência.',
+      });
 
-    setDoutor('');
+    setPaciente('');
+    setData('');
     setHorario('');
     setEspecialidade('');
     alert('Consulta marcada com sucesso!');
@@ -40,15 +43,15 @@ const MarcarConsulta = ({ onMarcarConsulta }: MarcarConsultaProps) => {
         <form onSubmit={handleSubmit} className="w-full flex flex-col gap-4">
           <div>
             <label htmlFor="doutor" className="block text-sm font-medium text-gray-700">
-              Nome do Doutor
+              Nome do Paciente
             </label>
             <input
               type="text"
-              id="doutor"
-              value={doutor}
-              onChange={(e) => setDoutor(e.target.value)}
+              id="paciente"
+              value={paciente}
+              onChange={(e) => setPaciente(e.target.value)}
               className="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2"
-              placeholder="Ex: Dr. Giovane Amato"
+              placeholder="Insira o nome do paciente"
             />
           </div>
           
@@ -56,13 +59,32 @@ const MarcarConsulta = ({ onMarcarConsulta }: MarcarConsultaProps) => {
             <label htmlFor="especialidade" className="block text-sm font-medium text-gray-700">
               Especialidade
             </label>
-            <input
-              type="text"
+            <select
               id="especialidade"
-              value={especialidade}
-              onChange={(e) => setEspecialidade(e.target.value)}
+              value={especialidade} 
+              onChange={(e) => setEspecialidade(e.target.value)} 
               className="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2"
-              placeholder="Ex: Cardiologista"
+            >
+              <option value="" disabled>Selecione uma especialidade</option>
+              <option value="Cardiologia">Cardiologia</option>
+              <option value="Dermatologia">Dermatologia</option>
+              <option value="Ortopedia">Ortopedia</option>
+              <option value="Neurologia">Neurologia</option>
+              <option value="Pediatria">Pediatria</option>
+              <option value="Clínica Geral">Clínica Geral</option>
+            </select>
+          </div>
+
+          <div>
+            <label htmlFor="data" className="block text-sm font-medium text-gray-700">
+              Data da Consulta
+            </label>
+            <input
+              type="date"
+              id="data"
+              value={data}
+              onChange={(e) => setData(e.target.value)}
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2"
             />
           </div>
 
@@ -87,9 +109,9 @@ const MarcarConsulta = ({ onMarcarConsulta }: MarcarConsultaProps) => {
           </button>
         </form>
       </div>
-      <div className='flex justify-center'>
-        <BotaoVoltar />
-      </div>
+      <div className="flex justify-center left-0 right-0">
+    <BotaoVoltar />
+  </div>
     </main>
   );
 };

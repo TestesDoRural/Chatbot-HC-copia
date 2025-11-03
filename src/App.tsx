@@ -10,7 +10,7 @@ import Sobre from "./OtherRoutes/SobreNos";
 import PortalPaciente from "./MainMenuRoutes/PortalPaciente";
 import MainHome from "./OtherRoutes/MainHome";
 import VerConsultas from "./MainMenuRoutes/VerConsultas";
-import MarcarConsulta from "./MainMenuRoutes/MarcarConsulta";
+import MarcarConsulta from "./MainMenuRoutes/MarcarConsulta/MarcarConsulta";
 import Localizacao from "./OtherRoutes/Localizacao";
 import UnidadeDetalhe from "./OtherRoutes/unidadeDetalhes";
 import SuporteSite from "./MainMenuRoutes/SuporteSite";
@@ -19,14 +19,7 @@ import { Routes, Route } from "react-router-dom";
 import ScrollTopPage from "./components/ScrollTopPage"; 
 import VLibras from "./components/VLibras";
 import Informacoes from "./MainMenuRoutes/Informacoes";
-
-export interface Consulta {
-  id: string; 
-  doutor: string;
-  horario: string;
-  especialidade: string;
-  observacao?: string;
-}
+import type { Consulta } from "./MainMenuRoutes/MarcarConsulta/type";
 
 function App() {
   const [consultas, setConsultas] = useState<Consulta[]>([]);
@@ -41,7 +34,6 @@ function App() {
       consultaComId
     ]);
   };
-
 
   return (
     <>
@@ -58,7 +50,7 @@ function App() {
             <Route path="/ContatoComHC" element={<ContatoComHC />} />
             <Route path="/SobreNos" element={<Sobre />} />
             <Route path="/PortalPaciente" element={<PortalPaciente />} />
-            <Route path="/VerConsultas" element={<VerConsultas consultas={consultas} />} />
+            <Route path="/VerConsultas" element={<VerConsultas consultas={consultas} />} /> 
             <Route path="/MarcarConsulta" element={<MarcarConsulta onMarcarConsulta={handleMarcarConsulta} />} />
             <Route path="/Localizacao" element={<Localizacao />} />
             <Route path="/Unidades/:unidadeId" element={<UnidadeDetalhe />} />
