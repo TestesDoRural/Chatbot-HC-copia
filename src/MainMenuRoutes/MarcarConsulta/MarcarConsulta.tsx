@@ -50,7 +50,7 @@ const MarcarConsulta = ({ onMarcarConsulta }: MarcarConsultaProps) => {
               id="paciente"
               value={paciente}
               onChange={(e) => setPaciente(e.target.value)}
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2"
+              className="mt-1 block w-full rounded-md border border-blue-300 shadow-sm p-2"
               placeholder="Insira o nome do paciente"
             />
           </div>
@@ -63,7 +63,7 @@ const MarcarConsulta = ({ onMarcarConsulta }: MarcarConsultaProps) => {
               id="especialidade"
               value={especialidade} 
               onChange={(e) => setEspecialidade(e.target.value)} 
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2"
+              className="mt-1 block w-full rounded-md border border-blue-300 shadow-sm p-2"
             >
               <option value="" disabled>Selecione uma especialidade</option>
               <option value="Cardiologia">Cardiologia</option>
@@ -84,7 +84,7 @@ const MarcarConsulta = ({ onMarcarConsulta }: MarcarConsultaProps) => {
               id="data"
               value={data}
               onChange={(e) => setData(e.target.value)}
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2"
+              className="mt-1 block w-full rounded-md border border-blue-300 shadow-sm p-2"
             />
           </div>
 
@@ -97,7 +97,7 @@ const MarcarConsulta = ({ onMarcarConsulta }: MarcarConsultaProps) => {
               id="horario"
               value={horario}
               onChange={(e) => setHorario(e.target.value)}
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2"
+              className="mt-1 block w-full rounded-md border border-blue-300 shadow-sm p-2"
             />
           </div>
 
