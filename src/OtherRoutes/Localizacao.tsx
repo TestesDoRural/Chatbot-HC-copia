@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { unidades } from '../data/UnidadesData';
+import BotaoVoltar from "../components/BotaoVoltar"
+
 
 const ITENS_POR_PAGINA = 8;
 const MIN_SWIPE_DISTANCE = 50; 
@@ -66,6 +68,7 @@ const Localizacao = () => {
   const unidadesVisiveis = unidades.slice(indiceInicial, indiceInicial + ITENS_POR_PAGINA);
 
   return (
+    <>
     <main className="w-full flex justify-center py-8 md:py-12 px-4 bg-gradient-to-b from-blue-50 to-white z-0">
       <div className="w-full max-w-7xl">
         <h1 className="text-3xl md:text-4xl font-bold text-blue-500 mb-8 text-center sm:text-left">Unidades</h1>
@@ -125,6 +128,11 @@ const Localizacao = () => {
         </div>
       </div>
     </main>
+  
+  <div className='flex justify-center'>
+    <BotaoVoltar />
+  </div>
+ </>
   );
 };
 

@@ -1,5 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import { unidades } from '../data/UnidadesData'; 
+import BotaoVoltar from '../components/BotaoVoltar';
 
 const UnidadeDetalhe = () => {
   const { unidadeId } = useParams<{ unidadeId: string }>();
@@ -35,6 +36,9 @@ const UnidadeDetalhe = () => {
       >
         {unidade.id === 'laboratorios-investigacao' ? 'Ver Portal' : 'Ver no Google Maps'}
       </a>
+      <div className='flex justify-center mt-5 -mb-10'>
+        <BotaoVoltar />
+      </div>
     </div>
   );
 };

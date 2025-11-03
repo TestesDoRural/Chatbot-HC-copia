@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import BotaoVoltar from "../components/BotaoVoltar";
 
 const Informacoes = () => {
     return (
@@ -42,7 +42,26 @@ const Informacoes = () => {
                     </div>
                 </div>
             </div>
+            <aside className="md:col-span-3 flex justify-center">
+                <div className="m-5 p-5 border-1 border-blue-300 bg-white rounded-2xl shadow-2xl flex flex-col items-center justify-center hover:transform hover:scale-105 transition-transform duration-300">
+                    <h2 className="text-blue-800 text-2xl mb-2">Saber mais</h2>
+                    <p className="text-center">Quer saber mais sobre o nosso projeto e como ele pode ajudar você e sua família? Consulte nossas páginas de FAQ e Sobre Nós.
+                    </p>
+                    <p className="text-xl mt-5">Sobre nós</p>
+                    <div className="flex flex-row gap-5 w-3/3 itens-center justify-center">
+                        <div className="w-50 h-10 mt-4 bg-blue-600 flex justify-center items-center rounded-full shadow-2xl hover:transform hover:scale-105 transition-transform duration-300 cursor-pointer">
+                            <Link to="/SobreNos" className="text-white text-center ">Sobre Nós</Link>
+                        </div>
+                        <div className="w-50 h-10 mt-4 bg-blue-600 flex justify-center items-center rounded-full shadow-2xl hover:transform hover:scale-105 transition-transform duration-300 cursor-pointer">
+                            <Link to="/FAQ" className="text-white text-center">FAQ</Link>   
+                        </div>
+                    </div> 
+                </div>
+            </aside>
         </article>
+        <div className='flex justify-center'>
+            <BotaoVoltar />
+        </div>
     </main>
     );
 }

@@ -76,12 +76,12 @@ const Main = () => {
             >
               
               <Card
-                img={op.img} 
+                img={op.img}
                 texto={op.texto}
                 path={op.path}
                 onClick={op.onClick}
                 className="h-full w-full"
-              />
+                ariaLabel={""}              />
             </div>
           );
         })}
