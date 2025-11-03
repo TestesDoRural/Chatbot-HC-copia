@@ -76,7 +76,7 @@
   <br>
   Link Github: <a href="https://github.com/MLG-Consultoria/Chatbot-HC">Chatbot-HC</a>
   <br>
-  Link do site: <a href="https://Chatbot-HC.vercel.app/">Chatbot-HC.vercel.app</a>
+  Link do site: <a href="https://front-challenge-2-semestre.vercel.app/">Chatbot-HC.vercel.app</a>
 </p>
 
 ###
