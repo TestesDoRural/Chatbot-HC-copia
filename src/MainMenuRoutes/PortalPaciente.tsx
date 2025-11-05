@@ -1,6 +1,7 @@
 import BotaoVoltar from "../components/BotaoVoltar"
 import Receita from "../assets/Outros/receitas.jpg"
 import Resultados from "../assets/Outros/resultados.jpg"
+import Lab from "../assets/Outros/Imagem-lab.jpg"
 
 const PortalPaciente = () => {
   return (
@@ -10,11 +11,11 @@ const PortalPaciente = () => {
         <p>Bem-vindo ao portal do paciente. Aqui você pode gerenciar suas consultas e acessar informações importantes.</p>
       </div>
 
-      <article className="mt-6 bg-white p-6 rounded-lg shadow-md w-max border border-blue-300 flex justify-center text-center flex-col">
+      <article className="mt-6 bg-white p-6 rounded-lg shadow-md w-max sm:w-fit border border-blue-300 flex justify-center text-center flex-col">
           <h2 className="text-xl font-semibold mb-4">Informações Importantes</h2>
-        <div className="grid grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
           <div 
-            className="border border-blue-300 rounded-xl w-72 h-72 flex flex-col justify-between items-center p-4 bg-cover bg-center text-white" 
+            className="border border-blue-300 rounded-xl w-72 h-72 flex flex-col justify-between items-center p-4 bg-cover bg-center text-white md:h-72 md:w-50 lg:w-72 lg:h-72" 
             style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${Resultados})` }}
           >
             <h1 className="text-2xl font-semibold mt-3 mb-3">Meus Resultados</h1>
@@ -27,8 +28,8 @@ const PortalPaciente = () => {
           </div>
 
           <div 
-            className="border border-blue-300 rounded-xl w-72 h-72 flex flex-col justify-between items-center p-4 bg-cover bg-center text-white" 
-            style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${Receita})` }}
+            className="border border-blue-300 rounded-xl w-72 h-72 flex flex-col justify-between items-center p-4 bg-cover bg-center text-white md:h-72 md:w-50 lg:w-72 lg:h-72" 
+            style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${Lab})` }}
           >
             <h1 className="text-2xl font-semibold mt-3 mb-3">Acessar Portal</h1>
             <p className="mb-4">Entre no seu portal do HC.</p>
@@ -40,7 +41,7 @@ const PortalPaciente = () => {
           </div>
 
           <div 
-            className="border border-blue-300 rounded-xl w-72 h-72 flex flex-col justify-between items-center p-4 bg-cover bg-center text-white" 
+            className="border border-blue-300 rounded-xl w-72 h-72 flex flex-col justify-between items-center p-4 bg-cover bg-center text-white md:h-72 md:w-50 lg:w-72 lg:h-72" 
             style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${Receita})` }}
           >
             <h1 className="text-2xl font-semibold mt-3 mb-3">Minhas Receitas</h1>
