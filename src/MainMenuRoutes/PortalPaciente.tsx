@@ -32,7 +32,7 @@ const PortalPaciente = () => {
             style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${Lab})` }}
           >
             <h1 className="text-2xl font-semibold mt-3 mb-3">Acessar Portal</h1>
-            <p className="mb-4">Entre no seu portal do HC.</p>
+            <p className="mb-4">Entre no seu portal do HC no site oficial.</p>
             <button className="w-full h-12 rounded-lg border border-blue-300 duration-300 cursor-pointer bg-blue-500 text-white font-bold text-lg hover:bg-blue-700 hover:scale-105 hover:transform">
               <a href="https://portaldopaciente.hc.fm.usp.br/agendamentos">
                 Acessar Portal
