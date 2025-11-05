@@ -1,4 +1,3 @@
-// NOVO: Importar 'useState'
 import { useState } from "react"; 
 import Header from "./components/header";
 import Integrantes from "./OtherRoutes/Integrantes";
@@ -19,6 +18,7 @@ import { Routes, Route } from "react-router-dom";
 import ScrollTopPage from "./components/ScrollTopPage"; 
 import VLibras from "./components/VLibras";
 import Informacoes from "./MainMenuRoutes/Informacoes";
+import ExitPage from './OtherRoutes/ExitPage';
 import type { Consulta } from "./MainMenuRoutes/MarcarConsulta/type";
 
 function App() {
@@ -57,6 +57,7 @@ function App() {
             <Route path="/SuporteSite" element={<SuporteSite />} />
             <Route path="/AtivarAcessiblidade" element={<AtivarAcessiblidade />} />
             <Route path="/Informacoes" element={<Informacoes />} />
+            <Route path="/ExitPage" element={<ExitPage />} />
           </Routes>
         </main>
         <Footer />

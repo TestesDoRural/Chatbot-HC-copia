@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import BotaoVoltar from "../components/BotaoVoltar";
+import ExternalLink from "../components/ExternalLink";
 
 const Informacoes = () => {
     return (
@@ -14,9 +15,9 @@ const Informacoes = () => {
                 <h2 className="text-blue-800 text-2xl mb-2">Para sua Consulta</h2>
                 <p className="text-center">Tenha em mãos seus documentos (RG, CPF, Cartão SUS) e o pedido médico. São essenciais para um atendimento ágil.</p>
                 <p className="text-xl mt-5">Para mais informações</p>
-                <div className="w-3/3 h-10 mt-4 bg-blue-600 flex justify-center items-center rounded-full shadow-2xl hover:transform hover:scale-105 transition-transform duration-300 cursor-pointer">
-                    <Link to="https://www.hc.fm.usp.br/hc/paciente/informacoes-uteis" target="_blank" className="text-white text-center ">Ver Mais Informações</Link>
-                </div>
+                <ExternalLink href="https://www.hc.fm.usp.br/hc/paciente/informacoes-uteis" className="text-white text-center w-3/3 h-10 mt-4 bg-blue-600 flex justify-center items-center rounded-full shadow-2xl hover:transform hover:scale-105 transition-transform duration-300 cursor-pointer">
+                    Ver Mais Informações
+                </ExternalLink>
             </div>
             
             <div className="m-5 p-5 border-1 border-blue-300 bg-white rounded-2xl shadow-2xl flex flex-col items-center justify-center hover:transform hover:scale-105 transition-transform duration-300">

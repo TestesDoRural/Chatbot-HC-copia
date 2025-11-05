@@ -6,7 +6,6 @@ const Sobre = () => {
       <section className="w-full bg-gradient-to-b from-blue-50 to-white py-12 px-4 flex justify-center ">
         <div className="max-w-3xl w-full bg-white rounded-2xl shadow-xl p-8 md:p-12 border border-blue-300 flex flex-col items-center ">
           
-          {/* Imagem centralizada e responsiva */}
           <img
             src="/Logo-MLG.jpeg" 
             alt="Logo MLG"
