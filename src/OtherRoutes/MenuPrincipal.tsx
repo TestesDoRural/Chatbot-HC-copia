@@ -22,7 +22,6 @@ const Main = () => {
 
   const toggleChat = () => {
     if (!window.watsonChatInstance) {
-      // Se ainda não carregou, tenta novamente
       const interval = setInterval(() => {
         if (window.watsonChatInstance) {
           if (chatAberto) {
@@ -59,7 +58,7 @@ const Main = () => {
   ];
 
   return (
-    <main className="w-full min-h-screen bg-gradient-to-b from-blue-50 to-white flex flex-col items-center justify-center p-4 sm:min-w-fit">
+    <main className="w-full min-h-screen flex flex-col items-center justify-center p-4 sm:min-w-fit">
       <div className="w-full max-w-6xl mx-auto grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] md:grid-cols-3 gap-5 2xl:grid-cols-subgrid-[repeat(auto-fit,minmax(500px,1fr))]">
         {opcoes.map((op, idx) => {
           const isLast = idx === opcoes.length - 1;
@@ -81,7 +80,7 @@ const Main = () => {
                 path={op.path}
                 onClick={op.onClick}
                 className="h-full w-full"
-                ariaLabel={""}              />
+                ariaLabel={""} />
             </div>
           );
         })}

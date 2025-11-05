@@ -1,7 +1,5 @@
-// src/components/MenuCard.tsx
 import { Link } from "react-router-dom";
 
-// --- Suas props (sem alteração) ---
 interface MenuCardProps {
   img: string;
   texto: string;
@@ -12,15 +10,11 @@ interface MenuCardProps {
 
 interface AcessibilidadeProps {
   ariaLabel: string;
-  ariaDescription?: string; // Usado para 'aria-describedby'
+  ariaDescription?: string; 
 }
 
 type MenuCardAcessivelProps = MenuCardProps & AcessibilidadeProps;
 
-
-// --- Componente Alterado ---
-
-// ALTERADO: Trocamos MenuCardProps por MenuCardAcessivelProps
 const MenuCard = ({ 
   img, 
   texto, 
