@@ -136,13 +136,15 @@ const VerConsultas: React.FC = () => {
                   </a>
                 </p>
               )}
-            <button aria-label="Remarcar consulta" className="ml-4">
-              <FaCalendarAlt size={30} />
-            </button>
+                <div className="flex flex-row gap-10 mt-4 items-center justify-center ">
+                  <button aria-label="Remarcar consulta" className="ml-4">
+                    <FaCalendarAlt size={30} />
+                  </button>
 
-          <button aria-label="Desmarcar consulta" className="ml-4">
-            <FaCalendarTimes size={30}/>
-          </button>
+                  <button aria-label="Desmarcar consulta" className="">
+                    <FaCalendarTimes size={30} />
+                  </button>
+                </div>
             </div>
           ))}
         </div>
