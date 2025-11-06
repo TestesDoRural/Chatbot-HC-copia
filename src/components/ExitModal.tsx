@@ -1,28 +1,35 @@
-import { useLocation, useNavigate } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import React from 'react';
 
-const ExitPage = () => {
-  const location = useLocation();
-  const navigate = useNavigate();
-  const [externalUrl, setExternalUrl] = useState<string | null>(null);
+// Lógica: Props para controlar o modal
+interface ExitModalProps {
+  isOpen: boolean;        // Controla se o modal está visível
+  onClose: () => void;    // Função para fechar o modal
+  externalUrl: string | null; // A URL externa
+}
 
-  useEffect(() => {
-    const params = new URLSearchParams(location.search);
-    const url = params.get('url');
-    if (url) {
-      setExternalUrl(decodeURIComponent(url));
+const ExitModal: React.FC<ExitModalProps> = ({ isOpen, onClose, externalUrl }) => {
+  if (!isOpen) return null; // Lógica: Não renderiza se estiver fechado
+
+  // Lógica: Função para o botão "Continuar"
+  const handleRedirect = (e: React.MouseEvent) => {
+    e.preventDefault(); // Previne a navegação padrão do link
+    if (externalUrl) {
+      window.open(externalUrl, '_blank', 'noopener,noreferrer');
     }
-  }, [location.search]);
-
-  const handleVoltar = () => {
-    navigate(-1); 
+    onClose(); // Fecha o modal
   };
 
   return (
-    <main className="flex flex-col items-center justify-center mt-5 sm:mt-25 p-4">
-      <div className="bg-white p-6 sm:p-8 rounded-lg shadow-md w-full max-w-lg border border-blue-300 text-center">
+    // Lógica: O overlay (fundo opaco)
+    <main className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 p-4">
+      
+      {/* Estilo: O card do ExitPage.tsx */}
+      <div className="bg-white p-6 sm:p-8 rounded-lg shadow-md w-full max-w-lg border-2 border-blue-300 text-center">
         
+        {/* Estilo: Título do ExitPage.tsx */}
         <h1 className="text-3xl font-semibold mb-3 text-gray-800">⚠️Aviso⚠️</h1>
+        
+        {/* Estilo: Textos do ExitPage.tsx */}
         <p className="text-lg text-gray-600 mb-6">
           Você está saindo do site do HC.
         </p>
@@ -38,17 +45,22 @@ const ExitPage = () => {
           Nunca informe dados pessoais ou senhas em sites não confiáveis.
         </p>
 
+        {/* Estilo: Botões do ExitPage.tsx */}
         <div className="flex flex-col sm:flex-row gap-4">
+          
+          {/* Lógica: Botão "Voltar" agora chama 'onClose' */}
           <button 
-            onClick={handleVoltar} 
+            onClick={onClose} 
             className="w-full h-12 rounded-lg border border-gray-300 duration-300 cursor-pointer bg-white text-gray-700 font-bold text-lg hover:bg-gray-100"
           >
             Voltar
           </button>
 
+          {/* Lógica: Botão "Continuar" agora chama 'handleRedirect' */}
           {externalUrl && (
             <a 
               href={externalUrl} 
+              onClick={handleRedirect}
               target="_blank" 
               rel="noopener noreferrer" 
               className="w-full h-12 flex items-center justify-center rounded-lg border border-blue-300 duration-300 cursor-pointer bg-blue-500 text-white font-bold text-lg hover:bg-blue-700 hover:scale-105 transform"
@@ -63,4 +75,4 @@ const ExitPage = () => {
   );
 };
 
-export default ExitPage;
+export default ExitModal;

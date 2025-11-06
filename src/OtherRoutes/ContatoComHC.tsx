@@ -78,10 +78,10 @@ const ContatoComHC: React.FC = () => {
 
         <div className="w-full md:max-w-8/12 bg-white rounded-2xl shadow-lg p-6 border-3 border-blue-300 sm:max-w-screen">
           <h1 className="text-center text-3xl font-semibold text-gray-800">
-            Entre em contato conosco
+            Entre em contato com o HC
           </h1>
           <p className="text-center text-gray-600 mb-6 text-2xl">
-            Preencha o formulário abaixo para nos enviar sua mensagem
+            Preencha o formulário abaixo para enviar sua mensagem
           </p>
 
           <form onSubmit={handleSubmit} className="space-y-4">

@@ -3,6 +3,7 @@ import { getConsultasAPI } from "../services/consultaService";
 import type { ConsultaResponse } from "../services/consultaService";
 import BotaoVoltar from "../components/BotaoVoltar";
 import LoadingCircle from "../components/LoadingCircle";
+import { FaCalendarAlt, FaCalendarTimes } from 'react-icons/fa';
 
 const VerConsultas: React.FC = () => {
   const [consultas, setConsultas] = useState<ConsultaResponse[]>([]);
@@ -135,6 +136,13 @@ const VerConsultas: React.FC = () => {
                   </a>
                 </p>
               )}
+            <button aria-label="Remarcar consulta" className="ml-4">
+              <FaCalendarAlt size={30} />
+            </button>
+
+          <button aria-label="Desmarcar consulta" className="ml-4">
+            <FaCalendarTimes size={30}/>
+          </button>
             </div>
           ))}
         </div>
