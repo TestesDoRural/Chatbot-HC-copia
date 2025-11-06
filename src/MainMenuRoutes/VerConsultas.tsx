@@ -14,7 +14,6 @@ const VerConsultas: React.FC = () => {
     async function carregarConsultas() {
       try {
         const dados = await getConsultasAPI();
-        // Ordena por data da mais recente para a mais antiga
         const ordenadas = dados.sort(
           (a: ConsultaResponse, b: ConsultaResponse) =>
             new Date(b.data_hora_consulta).getTime() -
