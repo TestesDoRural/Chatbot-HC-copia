@@ -1,4 +1,3 @@
-import { useState } from "react"; 
 import Header from "./components/header";
 import Integrantes from "./OtherRoutes/Integrantes";
 import ContatoComHC from "./OtherRoutes/ContatoComHC";
@@ -13,28 +12,13 @@ import MarcarConsulta from "./MainMenuRoutes/MarcarConsulta/MarcarConsulta";
 import Localizacao from "./OtherRoutes/Localizacao";
 import UnidadeDetalhe from "./OtherRoutes/unidadeDetalhes";
 import SuporteSite from "./MainMenuRoutes/SuporteSite";
-import AtivarAcessiblidade from "./MainMenuRoutes/AtivarAcessiblidade";
 import { Routes, Route } from "react-router-dom";
 import ScrollTopPage from "./components/ScrollTopPage"; 
 import VLibras from "./components/VLibras";
 import Informacoes from "./MainMenuRoutes/Informacoes";
 import ExitPage from './OtherRoutes/ExitPage';
-import type { Consulta } from "./MainMenuRoutes/MarcarConsulta/type";
 
 function App() {
-  const [consultas, setConsultas] = useState<Consulta[]>([]);
-  const handleMarcarConsulta = (novaConsulta: Omit<Consulta, 'id'>) => {
-    const consultaComId: Consulta = {
-      ...novaConsulta,
-      id: Date.now().toString()
-    };
-
-    setConsultas(consultasAnteriores => [
-      ...consultasAnteriores,
-      consultaComId
-    ]);
-  };
-
   return (
     <>
       <div className="flex flex-col min-h-screen">
@@ -45,17 +29,16 @@ function App() {
           <Routes>
             <Route path="/" element={<MainHome />} />
             <Route path="/MenuPrincipal" element={<MenuPrincipal />} />
-            <Route path="/integrantes" element={<Integrantes />} />
+            <Route path="/Integrantes" element={<Integrantes />} />
             <Route path="/faq" element={<Faq />} />
             <Route path="/ContatoComHC" element={<ContatoComHC />} />
             <Route path="/SobreNos" element={<Sobre />} />
             <Route path="/PortalPaciente" element={<PortalPaciente />} />
-            <Route path="/VerConsultas" element={<VerConsultas consultas={consultas} />} /> 
-            <Route path="/MarcarConsulta" element={<MarcarConsulta onMarcarConsulta={handleMarcarConsulta} />} />
+            <Route path="/VerConsultas" element={<VerConsultas />} /> 
+            <Route path="/MarcarConsulta" element={<MarcarConsulta />} />
             <Route path="/Localizacao" element={<Localizacao />} />
             <Route path="/Unidades/:unidadeId" element={<UnidadeDetalhe />} />
             <Route path="/SuporteSite" element={<SuporteSite />} />
-            <Route path="/AtivarAcessiblidade" element={<AtivarAcessiblidade />} />
             <Route path="/Informacoes" element={<Informacoes />} />
             <Route path="/ExitPage" element={<ExitPage />} />
           </Routes>
@@ -65,4 +48,5 @@ function App() {
     </>
   );
 }
+
 export default App;
