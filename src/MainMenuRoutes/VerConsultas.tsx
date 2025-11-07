@@ -238,6 +238,7 @@ const confirmarReagendamento = async () => {
                   aria-label="Reagendar consulta"
                   onClick={() => setReagendarId(consulta.id_consulta)}
                   disabled={consulta.status_consulta !== 0}
+                  className="cursor-pointer"
                 >
                   <FaCalendarAlt
                     size={28}
@@ -249,6 +250,7 @@ const confirmarReagendamento = async () => {
                   aria-label="Cancelar consulta"
                   onClick={() => handleCancelar(consulta.id_consulta)}
                   disabled={consulta.status_consulta !== 0}
+                  className="cursor-pointer"
                 >
                   <FaCalendarTimes
                     size={28}
