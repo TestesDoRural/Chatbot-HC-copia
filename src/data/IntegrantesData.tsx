@@ -1,10 +1,10 @@
-import Giovane1 from '../assets/Foto_Integrantes/GiovaneS_Integrantes.jpeg';
-import Lucas1 from '../assets/Foto_Integrantes/LucasV_Integrantes.jpeg';
-import Matheus1 from '../assets/Foto_Integrantes/MatheusR_Integrantes.jpeg';
+import Giovane1 from '../assets/Foto_Integrantes/FotosAntigas/GiovaneS_Integrantes.jpeg';
+import Lucas1 from '../assets/Foto_Integrantes/FotosAntigas/LucasV_Integrantes.jpeg';
+import Matheus1 from '../assets/Foto_Integrantes/FotosAntigas/MatheusR_Integrantes.jpeg';
 
-import Giovane2 from '../assets/Integrantes_novas_fotos/Giovane.png';
-import Lucas2 from '../assets/Integrantes_novas_fotos/Lucas.png';
-import Matheus2 from '../assets/Integrantes_novas_fotos/Matheus.png';
+import Giovane2 from '../assets/Foto_Integrantes/FotosNovas/Giovane.png';
+import Lucas2 from '../assets/Foto_Integrantes/FotosNovas/Lucas.png';
+import Matheus2 from '../assets/Foto_Integrantes/FotosNovas/Matheus.png';
 
 
 export const IntegrantesDataGeral = [
