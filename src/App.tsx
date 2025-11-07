@@ -30,7 +30,6 @@ function App() {
     setIsExitModalOpen(true);
   };
 
-  // FUNÇÃO PARA FECHAR O MODAL
   const closeExitModal = () => {
     setIsExitModalOpen(false);
     setCurrentExternalUrl(null);
