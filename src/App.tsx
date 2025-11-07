@@ -18,6 +18,7 @@ import ScrollTopPage from "./components/ScrollTopPage";
 import VLibras from "./components/VLibras";
 import Informacoes from "./MainMenuRoutes/Informacoes";
 import ExitModal from './components/ExitModal';
+import IntegrantesDetalhes from "./OtherRoutes/IntegrantesDetalhes";
 
 function App() {
 
@@ -57,6 +58,7 @@ function App() {
             <Route path="/Unidades/:unidadeId" element={<UnidadeDetalhe />} />
             <Route path="/SuporteSite" element={<SuporteSite />} />
             <Route path="/Informacoes" element={<Informacoes onOpenExitModal={openExitModal} />} />
+            <Route path="/Integrantes/:nome" element={<IntegrantesDetalhes />} />
           </Routes>
         </main>
         <Footer />
