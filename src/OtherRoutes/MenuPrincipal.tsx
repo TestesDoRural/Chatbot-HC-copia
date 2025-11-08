@@ -46,7 +46,7 @@ const Main = () => {
   };
 
   const opcoes = [
-    { img: MConsulta, texto: "Marcar Consulta", path: "/MarcarConsulta" },
+    { img: MConsulta, texto: "Solicitar agendamento de consulta", path: "/MarcarConsulta" },
     { img: VConsulta, texto: "Ver Consultas", path: "/VerConsultas" },
     { img: PortalPaciente, texto: "Portal do Paciente", path: "/PortalPaciente" },
     { img: Libras, texto: "Modo Libras", onClick: toggleVLibras },
